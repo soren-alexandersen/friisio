@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Item Hints help · Friis.io</title>
+  <meta name="description" content="Help for Item Hints, a Microsoft Dynamics 365 Business Central app by Friis.io.">
+  <style>
+    :root {
+      --slate: #304a4a;
+      --accent: #c4785a;
+      --muted: #6b7777;
+      --rule: #d9dddd;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      color: var(--slate);
+      background: #fff;
+      line-height: 1.65;
+    }
+    header {
+      padding: 1.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    header {
+      text-align: center;
+    }
+    header a {
+      display: inline-block;
+      color: var(--slate);
+      text-decoration: none;
+    }
+    header .wordmark {
+      display: block;
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1;
+    }
+    header .dot { color: var(--accent); }
+    header .tagline {
+      display: block;
+      margin-top: 0.4rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.55em;
+      padding-left: 0.55em;
+    }
+    main {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 2.5rem 1.5rem 3rem;
+    }
+    h1 { font-size: 2rem; margin: 0 0 0.25rem; }
+    .updated { color: var(--muted); margin: 0 0 2rem; }
+    h2 { font-size: 1.2rem; margin: 2.2rem 0 0.5rem; }
+    p, li { color: #3d4f4f; }
+    ul { padding-left: 1.25rem; }
+    a { color: var(--slate); text-underline-offset: 3px; }
+    a:hover { color: var(--accent); }
+    .app-head {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+      margin: 0 0 2rem;
+    }
+    .app-head img {
+      width: 96px;
+      height: 96px;
+      flex-shrink: 0;
+    }
+    .app-head h1 { margin: 0; }
+    .app-head p { margin: 0.25rem 0 0; color: var(--muted); }
+    ol { padding-left: 1.25rem; }
+    dt { font-weight: 700; margin-top: 1rem; }
+    dd { margin: 0.25rem 0 0; color: #3d4f4f; }
+    .note {
+      border-left: 3px solid var(--accent);
+      padding: 0.5rem 1rem;
+      background: #faf6f4;
+      margin: 1rem 0;
+    }
+    footer {
+      padding: 1.5rem;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      border-top: 1px solid var(--rule);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/" aria-label="Friis.io advisory, home">
+      <span class="wordmark">Friis<span class="dot">.</span>io</span>
+      <span class="tagline">advisory</span>
+    </a>
+  </header>
+
+  <main>
+    <div class="app-head">
+      <img src="logo.png" alt="Item Hints logo">
+      <div>
+        <h1>Item Hints</h1>
+        <p>Help for the Microsoft Dynamics 365 Business Central app</p>
+      </div>
+    </div>
+
+    <h2>What Item Hints does</h2>
+    <p>
+      Item Hints lets you attach short notes to items, such as handling instructions or
+      ordering reminders. The hints appear when people work with the item on sales and
+      purchase documents, so the right information shows up at the right moment.
+    </p>
+
+    <h2>Add a hint</h2>
+    <ol>
+      <li>Open the item card for the item.</li>
+      <li>Choose <strong>Related</strong>, then <strong>Item Hints</strong>.</li>
+      <li>Enter the hint text, and choose where and how it should appear.</li>
+    </ol>
+    <p>An item can have as many hints as you need.</p>
+
+    <h2>Hint settings</h2>
+    <dl>
+      <dt>Hint</dt>
+      <dd>The text people see. Up to 250 characters.</dd>
+
+      <dt>Applies To</dt>
+      <dd>Whether the hint is shown on sales documents, purchase documents, or both.</dd>
+
+      <dt>Show As</dt>
+      <dd>
+        Whether the hint is shown in the Item Hints FactBox, as a notification when
+        someone enters the item on a line, or both.
+      </dd>
+
+      <dt>Starting Date and Ending Date</dt>
+      <dd>
+        Optional. Use them for temporary hints, such as a delivery delay. Leave both blank
+        to show the hint all the time. The dates are compared with the work date.
+      </dd>
+    </dl>
+
+    <h2>Where hints appear</h2>
+    <ul>
+      <li><strong>Item card:</strong> the Item Hints FactBox shows the item's active hints.</li>
+      <li>
+        <strong>Sales orders and purchase orders:</strong> the Item Hints FactBox shows the
+        hints for the item on the selected line.
+      </li>
+      <li>
+        <strong>Sales and purchase lines:</strong> a notification appears when someone enters
+        the item on a line on a sales or purchase document.
+      </li>
+    </ul>
+    <p class="note">
+      Notifications only appear when a person enters the item. Lines created in the
+      background, for example by copying a document or through an API, don't trigger them.
+    </p>
+
+    <h2>Permissions</h2>
+    <dl>
+      <dt>Item Hints - Edit</dt>
+      <dd>For people who create and maintain hints.</dd>
+
+      <dt>Item Hints - Read</dt>
+      <dd>For people who only need to see hints, such as order takers and buyers.</dd>
+    </dl>
+
+    <h2>Requirements</h2>
+    <p>Microsoft Dynamics 365 Business Central online, version 27 or later.</p>
+
+    <h2>Support</h2>
+    <p>
+      Email <a href="mailto:soren@friis.io">soren@friis.io</a>. Please include your
+      Business Central version and a short description of the issue.
+    </p>
+    <p>
+      See also the <a href="/privacy/">privacy policy</a> and the
+      <a href="/eula/">end user license agreement</a>.
+    </p>
+  </main>
+
+  <footer>
+    Friis.io · CVR YOUR-CVR-NUMBER · YOUR REGISTERED ADDRESS, Denmark
+  </footer>
+</body>
+</html>
